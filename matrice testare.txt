@@ -1,0 +1,27 @@
+
+Matricea de Testare
+
+| Nr. | Clasa              | Funcționalitate testată (ambele limbi) | Input                                       | Așteptat                                                     | Rezultat   |
+|-----|--------------------|----------------------------------------|---------------------------------------------|--------------------------------------------------------------|------------|
+| 1   | --------           | Afisare meniu                          | Romana/Engleza case insensitive             | afisare meniu/eroare daca raspunsul e invalid                | functional |
+| 2   | Angajat            | Afiseaza Angajati                      | Fisierul csv cu angajati                    | Afișează corect angajatii                                    | functional |
+| 3   | Angajat            | Sterge Angajati                        | Numele angajatului ce trebuie sters         | Randul cu respectivul angajat sters                          | functional |
+| 4   | Angajat            | Adauga Angajati                        | Prenume,Nume,Functie,Ora inceput,Ora sfarsit| aduga in fisierul csv informatiile                           | functional |
+| 5   | Barista            | Moștenire: Constructor                 | Prenume,Nume,Barista,Ora inceput,Ora sfarsit| Obiect Barista creat                                         | functional |
+| 6   | Angajat            | Modificare Program Angajat             | Nume si Prenume,Ora inceput,Ora sfarsit     | Informații Barista afișate                                   | functional |
+| 7   | Manager            | Mostenire: Constructor                 | Prenume,Nume,Manger,Ora inceput,Ora sfarsit | Obiect Manager creat                                         | functional |
+| 8   | Ospatar            | Moștenire: Constructor                 | Prenume,Nume,Ospatar,Ora inceput,Ora sfarsit| Obiect Ospatar creat                                         | functional |
+| 9   | Produs             | Afiseaza Produse                       | Fisierul csv cu produse                     | Afiseaza corect lista de produse                             | functional |
+| 10  | Produs             | Adaugare produs                        | Nume produs, pret                           | adauga in fisierul csv informatiile                          | functional |
+| 11  | Produs             | Stergere Produs                        | Numele produsului ce trebuie sters          | Randul cu respectivul produs sters                           | functional |
+| 12  | Comanda            | Profit zilnic                          | fisierul csv cu comenzi                     | Returnează suma prețurilor comenzilor                        | functional |
+| 13  | Comanda            | Afișare comandă                        | Comanda cu produse                          | Listează produsele și clientul                               | functional |
+| 14  | Comanda            | Adauga Comanda                         | Nume client,nume produs                     | adauga in fisierul csv informatiile                          | functional |
+| 15  | Eveniment          | Afiseaza Evenimente                    | Fisierul csv cu evenimente                  | Afișează evenimentul, data, costul                           | functional |
+| 16  | RaportFinanciar    | Citire CSV                             | fisier CSV                                  | Conținutul este încărcat corect                              | functional |
+| 17  | RaportFinanciar    | Scriere CSV                            | Date noi                                    | Datele sunt salvate corect                                   | functional |
+| 18  | RaportFinanciar    | Afisare Raport Financiar               | fisier CSV                                  | Afisare venituri, costuri si profit                          | functional |
+| 19  | Comanda            | Reducere client fidel                  | fisierul csv cu comenzi                     | ofera 10% reducere daca clientul e la cel putin a 4 a comanda| functional |
+| 20  | Eveniment          | Adauga Eveniment                       | Nume,data,costul                            | adauga datele in fisierul csv                                | functional |
+| 21  | Eveniment          | Sterge Evenimente                      | Numele evenimentului                        | sterge datele din fisierul csv                               | functional |
+| 22  | Toate              | Inapoi la Meniul Principal             | "0"                                         | Intoarcere la meniul principal                               | functional |

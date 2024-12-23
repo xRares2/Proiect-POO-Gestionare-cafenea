@@ -1,0 +1,65 @@
+diagrama UML:
+
+1. Angajat
+   - Attributes:
+     - nume: string
+     - functie: string
+     - oraInceput: int
+     - oraSfarsit: int
+   - Methods:
+     - +Angajat(nume: string, functie: string, oraInceput: int, oraSfarsit: int)
+     - +~Angajat()
+     - +afiseazaInformatii(): void
+
+1.1. Barista (inherits from Angajat)
+   - Methods:
+     - +Barista(nume: string, oraInceput: int, oraSfarsit: int)
+     - +afiseazaInformatii(): void
+
+1.2. Manager (inherits from Angajat)
+   - Methods:
+     - +Manager(nume: string, oraInceput: int, oraSfarsit: int)
+     - +afiseazaInformatii(): void
+
+1.3. Ospatar (inherits from Angajat)
+   - Methods:
+     - +Ospatar(nume: string, oraInceput: int, oraSfarsit: int)
+     - +afiseazaInformatii(): void
+
+2. Produs
+   - Attributes:
+     - nume: string
+     - pret: double
+   - Methods:
+     - +Produs(nume: string, pret: double)
+     - +getPret(): double
+
+3. Comanda
+   - Attributes:
+     - produse: vector<Produs>
+     - numeClient: string
+   - Methods:
+     - +adaugaProdus(produs: Produs): void
+     - +calculeazaTotal(): double
+     - +afiseazaComanda(): void
+
+4. Eveniment
+   - Attributes:
+     - nume: string
+     - data: string
+     - cost: double
+   - Methods:
+     - +afiseazaEveniment(): void
+
+5. RaportFinanciar
+   - Attributes:
+     - venituri: double
+     - cheltuieli: double
+     - profit: double
+     - continut: vector<vector<string>>
+   - Methods:
+     - +citesteCSV(numeFisier: string): vector<vector<string>>
+     - +scrieCSV(numeFisier: string, continut: vector<vector<string>>): void
+     - +adaugaAngajat(numeFisier: string, angajat: vector<string>): void
+     - +stergeAngajat(numeFisier: string, nume: string): void
+     - +afiseazaRaport(): void
