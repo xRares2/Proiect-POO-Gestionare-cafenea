@@ -1,1 +1,1 @@
-executabilul trebuie rulat in acelasi fisier cu codul
+executabilul trebuie rulat in acelasi fisier cu codul si restul fisierelor
